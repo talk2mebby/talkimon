@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  meshnode:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config.yaml:/etc/meshnode/config.yaml
+      - ./logs:/logs
+    privileged: true

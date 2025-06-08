@@ -1,0 +1,31 @@
+meshnode_id: meshnode-1
+
+api_keys:
+  - my-secret-api-key
+  - partner-ai-key
+
+discovery:
+  enabled: true
+
+devices:
+  - device_id: relay-1
+    type: RelayDevice
+    pin: 17
+    allowed_api_keys:
+      - my-secret-api-key
+
+  - device_id: servo-1
+    type: ServoDevice
+    pin: 18
+    allowed_api_keys:
+      - my-secret-api-key
+
+  - device_id: smart-plug-1
+    type: RestApiDevice
+    endpoint: "http://192.168.1.150/api/plug/onoff"
+    allowed_api_keys:
+      - my-secret-api-key
+
+peers:
+  - http://192.168.1.102:8000
+  - http://192.168.1.103:8000
