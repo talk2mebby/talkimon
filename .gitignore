@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+env/
+venv/
+ENV/
+VENV/
+.env
+
+# SQLite / DB files
+*.sqlite3
+*.db
+*.sqlite
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Pytest
+.cache/
+
+# Coverage
+htmlcov/
+.coverage
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# MeshNode generated files
+meshnode/__pycache__/
+meshnode/*.db
+meshnode/audit_log.db
+mesh_memory.db
+
